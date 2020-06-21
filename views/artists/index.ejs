@@ -1,0 +1,70 @@
+<script src="/test.js"></script>
+<h2>Search Authors</h2>
+<form action="/artists" method="GET">
+    <label>Name</label>
+    <input type="text" name="name" value="<%= searchOptions.name %>">
+    <button type="submit">Search</button>
+    
+</form>
+<button onclick="window.location.href='/albums'">
+    View all albums
+  </button>
+<br>
+<% artists.forEach(artist => { %>
+    <div>
+
+    </div>
+
+    <% }) %>
+
+        <% users.forEach(user => { %>
+
+            <% }) %>
+                <div class="container">
+                    <div class="row vertical-align grid-container">
+
+                        <% for(var i = 0; i < artists.length; i++) { %>
+                            <div class="col-lg-4 col-md-8 col-sm-12 col-xs-24 ">
+                                <% var status=0; %>
+
+                                    <a href="/artists/<%= artists[i].id %>" style="margin: 0px;">
+                                <img width="300 px" height="300 px" style="display: block;"  style="padding:50px;" src="<%= artists[i].coverImagePath %>" alt="Gallery image 1" >
+                                <div class="carousel-caption">
+                                    <h4 ><%= artists[i].name %></h4>
+                                </div>
+                            </a>
+
+                                    <p class="artistName">
+
+                                        <% if(user_con!=undefined){ %>
+                                            <% for(var j = 0; j < favoritesUser.length; j++) {  %>
+                                                <% if(favoritesUser[j].artist==artists[i].id) { %>
+                                                    <% status=1; %>
+                                                        <% } %>
+
+                                                            <% } %>
+                                                                <% if(status==0) { %>
+
+                                                                    <button onclick="window.location.href='/artists/<%= artists[i].id %>/<%= user_con.name %>/1' ;"  class="active btn btn-danger btn-sm">Favorite</button>
+
+                                                                    <% } %>
+                                                                        <% status=0; %>
+
+                                                                            <% } %>
+
+                                                                                <br>
+                                    </p>
+
+
+
+
+
+
+                            </div>
+
+
+                            <% } %>
+
+                    </div>
+                </div>
+                <br>

@@ -1,0 +1,14 @@
+<h2><%= artist.name %></h2> <!--  artist is passing by router.get('/:id/:id2') in artists routes -->
+<h3><%= albumsByArtist.title %></h3>
+<h4><%= albumsByArtist.publishDate %></h4>
+
+<!--
+<video controls="true" src="<%= albumsByArtist.tracksCount %>" autoplay="none" preload="auto" width="600" height="400">
+</video>
+-->
+<div style="text-align: center;">
+<iframe width="420" height="315" style="margin:50px;"
+src="<%= albumsByArtist.tracksCount %>">
+</iframe>
+
+</div>

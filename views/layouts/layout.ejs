@@ -1,0 +1,165 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="test.css">
+
+    <script src="test.js" defer></script>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <!-- Bootstrap End -->
+    <link rel="stylesheet" href="menu.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Left Menu -->
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="/">Home</a>
+        <a href="/artists">Featured Artists</a>
+        <a href="news/news.html">News</a>
+        <a href="faq/faq.html">FAQ</a>
+        <a href="/dashboard">Profile</a>
+        <a href="contact/contact.html">Contact Us</a>
+
+    </div>
+    <header>
+        <div class="bg-img">
+            <div class="top-container">
+                <div class="topnav">
+                    <button class="mainbtn" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </button>
+
+                </div>
+            </div>
+            <div class="top-right-container">
+                <div class="log-in">
+
+                    <button onclick="window.location.href='/users/login'" style="width:auto;" class="login"><h6>Log-In</h6></button>
+                    <div id="id01" class="modal">
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </header>
+    <!-- Left Menu -->
+
+    <%- body %>
+        <!-- insert index.ejs-->
+
+
+
+
+        <!-- Bottom Menu 2-->
+        <div class="row">
+            <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 botMenu">
+                <a href="/" class="active "><img alt="" src="pic7.jpg" width="100%" height="200">
+                    <div class="carousel-caption">
+                        <h4 id="home">Home</h4>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 botMenu">
+                <a href="/artists" class="active"><img alt="" src="pic3.jpg" width="100%" height="200">
+                    <div class="carousel-caption">
+                        <h4>Featured Artists</h4>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 botMenu">
+                <a href="news/news.html" class="active "><img alt="" src="pic2.jpg" width="100%" height="200">
+                    <div class="carousel-caption">
+                        <h4>News</h4>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 botMenu ">
+                <a href="faq/faq.html" class="active botMenu"><img alt="" src="pic4.jpg" width="100%" height="200">
+                    <div class="carousel-caption">
+                        <h4>FAQ</h4>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 botMenu">
+                <a href="/dashboard" class="active botMenu"><img alt="lol" src="pic5.jpg" width="100%" height="200">
+                    <div class="carousel-caption">
+                        <h4>Profile</h4>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 botMenu">
+                <a href="contact/contact.html" class="active botMenu"><img border="0" alt="" src="pic6.jpg" width="100%" height="200" style="padding-left: 0px;padding-right:0px">
+                    <div class="carousel-caption">
+                        <h4>Contact Us</h4>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- Social Media -->
+        <footer id="colophon" class="site-footer" role="contentinfo">
+            <div class="social-wrapper">
+                <ul>
+                    <li>
+                        <a href="#" target="_blank">
+                            <img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/twitter-128.png" alt="Twitter Logo" class="twitter-icon"></a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <img src="https://www.mchenryvillage.com/images/instagram-icon.png" alt="Instagram Logo" class="instagram-icon"></a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <img src="https://www.columbia.edu/~ml3720/linkedin.jpg" alt="Linkedin Logo" class="linkedin-icon"></a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <img src="http://www.iconarchive.com/download/i54037/danleech/simple/facebook.ico" alt="Facebook Logo" class="facebook-icon"></a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <img src="http://icons.iconarchive.com/icons/marcus-roberto/google-play/256/Google-plus-icon.png" alt="Googleplus Logo" class="googleplus-icon"></a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <img src="https://lh3.googleusercontent.com/j_RwVcM9d47aBDW5DS1VkdxUYCkDUCB6wZglv4x-9SmsxO0VaFs7Csh-FmKRCWz9r_Ef=w170" alt="Youtube Logo" class="youtube-icon"></a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <img src="http://www.iconarchive.com/download/i94258/designbolts/vector-foursquare/Foursquare-2.ico" alt="Foursquare Logo" class="foursquare-icon"></a>
+                    </li>
+                </ul>
+            </div>
+
+            <nav class="footer-nav" role="navigation">
+                <p>Copyright &copy; 2013-
+                    <?php echo date("Y"); ?> Cisco Rendon. All rights reserved.</p>
+            </nav>
+        </footer>
+        <!-- Social Media -->
+</body>
+
+</html>

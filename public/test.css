@@ -1,0 +1,116 @@
+.grid {
+    display: grid;
+    padding: 10px;
+    grid-column-gap: 20px;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: "content sidebar";
+}
+
+.grid article {
+    grid-area: content;
+    margin-left: 250px;
+    padding: 50px;
+}
+
+.feature {
+    min-width: 150px;
+    max-width: 50%;
+    float: right;
+}
+
+#center {
+    text-align: center;
+}
+
+
+/* article {
+    width: 80vw;
+    min-width: 350px;
+    max-width: 400px;
+    margin: 30px auto;
+    box-shadow: 0 19px 16px -16px #0005;
+}
+
+article p {
+    line-height: 1.5em;
+    text-align: justify
+} */
+
+.container {
+    min-height: 150%;
+}
+
+div.top-right-container {
+    float: right;
+}
+
+form {
+    border: 3px solid #f1f1f1;
+}
+
+input[type=text],
+input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button.login {
+    background-color: #4da6ff;
+    color: black;
+    padding: 14px 20px;
+    margin: 15px;
+    border: solid #0000ff 1px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+img.avatar {
+    width: 5%;
+    border-radius: 50%;
+}
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+    .cancelbtn {
+        width: 100%;
+    }
+}
+
+.grid-container {
+    grid-row-gap: 50px;
+}
+
+.artistName {
+    text-align: center;
+}

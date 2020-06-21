@@ -1,0 +1,29 @@
+<h2>
+    <%= artist.name %>
+</h2>
+<!--  artist is passing by router.get('/:id') in artists routes -->
+
+
+
+
+<div class="container">
+    <div class="row vertical-align grid-container">
+
+        <% for(var i = 0; i < albumsByArtist.length; i++) { %>
+            <div class="col-lg-4 col-md-8 col-sm-12 col-xs-24 ">
+                    <a href="/artists/<%=artist.id %>/<%=albumsByArtist[i].id %>" ; >
+                    <img width="300 px" height="300 px" style="display: block;"  style="padding:50px;" src="<%= albumsByArtist[i].coverImagePath %>" alt="Gallery image 1" >
+                    <div class="carousel-caption">
+                        <h4>
+                            <%= albumsByArtist[i].title%>
+                        </h4>
+                    </div>    
+                    
+                
+                    </a>
+                
+            </div>
+        <% } %>
+    </div>
+</div>
+

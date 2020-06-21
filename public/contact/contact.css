@@ -1,0 +1,37 @@
+.middle {
+    text-align: center;
+    list-style: inside;
+}
+
+li.blue {
+    color: #4da6ff;
+}
+
+ul.black {
+    color: black;
+    font-weight: 600;
+}
+
+.head {
+    text-align: center;
+    list-style: inside;
+    color: #4da6ff;
+}
+
+button.login {
+    background-color: #4da6ff;
+    color: black;
+    padding: 14px 20px;
+    margin: 15px;
+    border: solid #0000ff 1px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+div.top-right-container {
+    float: right;
+}

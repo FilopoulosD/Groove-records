@@ -1,0 +1,45 @@
+<a href="/users/logout" class="btn btn-secondary float-right">Logout</a>
+
+<p class="lead mb-3">Welcome
+    <%= user_con.name %>
+</p>
+
+
+
+<h3>Your Favorite Artists :</h3>
+<div class="container">
+    <div class="row vertical-align grid-container">
+        <% for(var i = 0; i < favorite.length; i++) { %>
+
+            <% if(favorite[i].user==user_con.name) { %>
+
+                <% artist.forEach(artist => { %>
+                    <% if(favorite[i].artist==artist.id) { %>
+
+                        <div class="col-lg-4 col-md-8 col-sm-12 col-xs-24 ">
+                            <a href="/artists/<%= artist.id %>" ; class="active">
+                                <img src="<%= artist.coverImagePath %>"  alt="Gallery image 1" class="gallery__img img-responsive" height="300" width="300" style="margin: 50px;">
+                                
+
+                            </a>
+                            <div style="text-align: center;">
+                                <h4>
+                                    <%= artist.name %>
+                                </h4>
+                                <button onclick="window.location.href='/dashboard/<%= favorite[i].id %>' ;" class="active btn btn-danger btn-sm" style="float: inherit;">Remove From Favorite</button>
+
+                            </div>
+
+                        </div>
+
+
+                        <% } %>
+
+                            <% }) %>
+
+                                <% } %>
+
+                                    <% } %>
+    </div>
+
+</div>

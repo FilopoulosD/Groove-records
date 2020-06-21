@@ -1,0 +1,93 @@
+button.login {
+    background-color: #4da6ff;
+    color: black;
+    padding: 14px 20px;
+    margin: 15px;
+    border: solid #0000ff 1px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+div.top-right-container {
+    float: right;
+}
+
+.more {
+    display: none;
+}
+
+.title {
+    color: #4da6ff;
+    text-align: center;
+}
+
+.articleTitle {
+    color: #4da6ff;
+    display: inline
+}
+
+.myBtn {
+    background-color: #4da6ff;
+    border: solid #0000ff 1px;
+    color: black;
+    font-weight: 600;
+}
+
+.toggle-text {
+    display: none;
+}
+
+p {
+    color: black;
+    font-weight: 600;
+}
+
+.grid {
+    display: grid;
+    padding: 10px;
+    grid-column-gap: 20px;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: repeat(4, max(150px));
+    /*grid-template-areas:"content sidebar";*/
+}
+
+.title {
+    margin-left: 150px;
+}
+
+.grid article {
+    margin-left: 150px;
+    overflow: hidden;
+}
+
+.art2 {
+    grid-row: 2/3;
+    grid-column: 1/2;
+}
+
+.art3 {
+    grid-row: 3/4;
+    grid-column: 1/2;
+}
+
+#more {
+    display: none;
+}
+
+p {
+    font-size: 14px;
+    line-height: 1em;
+}
+
+.photo {
+    float: left;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top: 15px;
+    padding-right: 10px;
+}
