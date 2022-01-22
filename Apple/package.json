@@ -22,7 +22,7 @@
     "flash": "^1.1.0",
     "mongoose": "^5.9.10",
     "multer": "^1.4.2",
-    "node-fetch": "^2.6.0",
+    "node-fetch": "^3.1.1",
     "passport": "^0.4.1",
     "passport-local": "^1.0.0",
     "youtube-embed-video": "^1.2.1"
